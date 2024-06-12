@@ -1,42 +1,85 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
 }
 
 .container {
-    width: 80%;
-    margin: auto;
+    display: flex;
+}
+
+aside {
+    width: 20%;
+    background-color: #222;
     padding: 20px;
 }
 
-.tabs {
-    overflow: hidden;
-    border-bottom: 1px solid #ccc;
+aside ul {
+    list-style: none;
+    padding: 0;
 }
 
-.tabs button {
-    background-color: inherit;
+aside ul li {
+    padding: 10px 0;
+}
+
+aside ul li.active {
+    font-weight: bold;
+    color: #ccc;
+}
+
+main {
+    width: 80%;
+    padding: 20px;
+}
+
+main h2 {
+    font-size: 24px;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.navigation-buttons button {
+    background-color: #444;
+    color: #fff;
     border: none;
-    outline: none;
+    padding: 10px 20px;
     cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
 }
 
-.tabs button:hover {
-    background-color: #ddd;
-}
-
-.tabs button.active {
-    background-color: #ccc;
-}
-
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border-top: none;
-}
-
-.tabcontent h2 {
-    margin-top: 0;
+.navigation-buttons button:hover {
+    background-color: #555;
 }

@@ -3,29 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Wiki</title>
+    <title>ExtrimeWiki</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1>ExtrimeWiki</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="openTab(event, 'ExtrimeCrypto')">ExtrimeCrypto</a></li>
+                <li><a href="#" onclick="openTab(event, 'ExtrimeTickets')">ExtrimeTickets</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="container">
-        <h1>Project Wiki</h1>
-        <div class="tabs">
-            <button class="tablinks" onclick="openTab(event, 'Plugin1')">Plugin 1</button>
-            <button class="tablinks" onclick="openTab(event, 'Plugin2')">Plugin 2</button>
-            <button class="tablinks" onclick="openTab(event, 'Plugin3')">Plugin 3</button>
-        </div>
-        <div id="Plugin1" class="tabcontent">
-            <h2>Plugin 1</h2>
-            <p>Information about Plugin 1.</p>
-        </div>
-        <div id="Plugin2" class="tabcontent">
-            <h2>Plugin 2</h2>
-            <p>Information about Plugin 2.</p>
-        </div>
-        <div id="Plugin3" class="tabcontent">
-            <h2>Plugin 3</h2>
-            <p>Information about Plugin 3.</p>
-        </div>
+        <aside>
+            <ul id="ExtrimeCrypto" class="tabcontent">
+                <li>Info x Dependacy</li>
+                <li class="active">Config</li>
+                <li>FAQ</li>
+                <li>Video-Cart</li>
+                <li>Stanok</li>
+            </ul>
+            <ul id="ExtrimeTickets" class="tabcontent" style="display:none;">
+                <li>Ticket Info</li>
+                <li>Pricing</li>
+                <li>FAQ</li>
+            </ul>
+        </aside>
+        <main>
+            <div id="Config">
+                <h2>Config</h2>
+                <p>Graphic designers, product managers, and UI/UX designers are well aware of Figma’s capability as an excellent tool for their workflow. With its multifaceted and user-friendly interface, Figma enables seamless design and collaboration. Among its many useful features is text editing, crucial for effective communication in design. However, for those unfamiliar with Figma, using text may seem daunting. To help, here is a comprehensive guide on how to utilize text in Figma, step by step:</p>
+                <div class="navigation-buttons">
+                    <button onclick="navigateContent('Info x Dependacy')">&lt; Info x Dependacy</button>
+                    <button onclick="navigateContent('FAQ')">FAQ &gt;</button>
+                </div>
+            </div>
+        </main>
     </div>
     <script src="scripts.js"></script>
 </body>
